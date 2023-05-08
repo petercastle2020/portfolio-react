@@ -1,0 +1,11 @@
+.project {
+  margin: 2rem 2rem;
+}
+.project-title {
+  text-align: left;
+}
+
+.project-contents {
+  display: flex;
+  flex-direction: row;
+}
