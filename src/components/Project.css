@@ -28,8 +28,8 @@
   display: flex;
 }
 .project-img > img {
-  height: 250px;
-  width: 300px;
+  height: 300px;
+  width: 350px;
   vertical-align: top;
   border: solid 2px aqua;
 }

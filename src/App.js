@@ -18,14 +18,43 @@ function App() {
       <section className="landing">
         <Landing />
       </section>
-      <svg
-        xmlns="http://www.w3.org/200/svg"
-        version="1.1"
-        class="black-static-svg"
-        // transform="rotate(180)"
-      >
-        <path
-          d="
+
+      {projects.map((project, index) =>
+        index === 1 ? (
+          <section id="projects" className="project-section-light">
+            <Project key={index} project={project} />
+          </section>
+        ) : (
+          <>
+            <svg
+              xmlns="http://www.w3.org/200/svg"
+              version="1.1"
+              class="black-static-svg"
+              // transform="rotate(180)"
+            >
+              <path
+                d="
+            M0 67,
+            C 373, 283 
+              1022, -140
+              1920, 306
+            V 600
+            H 0
+            V 67  
+            Z"
+              ></path>
+            </svg>
+            <section id="projects" className="project-section-dark">
+              <Project key={index} project={project} />
+            </section>
+            <svg
+              xmlns="http://www.w3.org/200/svg"
+              version="1.1"
+              class="black-static-svg"
+              transform="rotate(180)"
+            >
+              <path
+                d="
         M0 67,
         C 373, 283 
           1022, -140
@@ -34,31 +63,12 @@ function App() {
         H 0
         V 67  
         Z"
-        ></path>
-      </svg>
-      <section id="projects" className="project-section">
-        {projects.map((project, index) => (
-          <Project key={index} project={project} />
-        ))}
-      </section>
-      <svg
-        xmlns="http://www.w3.org/200/svg"
-        version="1.1"
-        class="black-static-svg"
-        transform="rotate(180)"
-      >
-        <path
-          d="
-        M0 67,
-        C 373, 283 
-          1022, -140
-          1920, 306
-        V 600
-        H 0
-        V 67  
-        Z"
-        ></path>
-      </svg>
+              ></path>
+            </svg>
+          </>
+        )
+      )}
+
       <section id="skills" className="skills-section"></section>
       <svg
         xmlns="http://www.w3.org/200/svg"
