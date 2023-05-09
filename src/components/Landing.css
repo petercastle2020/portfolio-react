@@ -4,20 +4,22 @@
   width: 100%;
   fill: rgb(0, 0, 0);
   /* height: 40vh; */
-  height: 300px;
-  position: absolute;
+  height: 250px;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
 }
 
 .hero-section {
   /* margin-top: 17vh; */
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  margin-top: 30vh;
   text-align: center;
 }
 
 .landing {
-  height: 750px;
+  height: 70vh;
 }
 
 section {

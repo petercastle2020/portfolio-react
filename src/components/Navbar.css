@@ -1,0 +1,28 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  justify-content: flex-end;
+  /* background-color: aqua; */
+}
+
+.nav-bar > a {
+  color: #fff;
+  margin: 2rem 3rem 2rem 3rem;
+  font-weight: 100;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.nav-bar > a:hover {
+  color: aqua;
+  /* color: rgb(95, 84, 194); */
+  font-size: 1.2rem;
+}
