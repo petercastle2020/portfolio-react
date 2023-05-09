@@ -12,7 +12,7 @@ const Project = ({ project }) => {
         <div>
           <img src="#" alt="project-illustration" />
         </div>
-        <div>
+        <div className="project-about">
           <p>{project.aboutText}</p>
         </div>
       </div>

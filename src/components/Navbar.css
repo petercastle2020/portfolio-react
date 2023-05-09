@@ -5,14 +5,13 @@
   top: 0;
   right: 0;
   z-index: 2;
-  color: #fff;
   justify-content: flex-end;
   /* background-color: aqua; */
 }
 
 .nav-bar > a {
   color: #fff;
-  margin: 2rem 3rem 2rem 3rem;
+  margin: 2rem 3rem 2rem 1rem;
   font-weight: 100;
   transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;

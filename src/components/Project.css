@@ -1,9 +1,15 @@
 .project {
   margin: 2rem 0 2rem 0;
   position: relative;
+  color: aqua;
 }
 .project-title {
   text-align: left;
+  color: inherit;
+}
+
+.project-about > p {
+  color: inherit;
 }
 
 .project-contents {
