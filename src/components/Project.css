@@ -1,18 +1,59 @@
 .project {
-  margin: 2rem 0 2rem 0;
-  position: relative;
-  color: aqua;
+  margin: 2rem 2rem 2rem 2rem;
 }
 .project-title {
   text-align: left;
   color: inherit;
+  color: aqua;
+}
+
+.project-about {
+  float: left;
+  text-align: left;
 }
 
 .project-about > p {
   color: inherit;
+  display: flex;
+  font-size: 1rem;
+  padding-left: 0.5rem;
 }
 
 .project-contents {
   display: flex;
   flex-direction: row;
+}
+
+.project-img {
+  display: flex;
+}
+.project-img > img {
+  height: 250px;
+  width: 300px;
+  vertical-align: top;
+  border: solid 2px aqua;
+}
+
+@media screen and (max-width: 650px) {
+  .project-title {
+    text-align: center;
+  }
+  .project {
+    margin: 0;
+  }
+  .project-contents {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .project-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-about {
+    float: none;
+    text-align: center;
+  }
 }

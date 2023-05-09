@@ -1,15 +1,16 @@
 .skills-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .skills-container > div {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   margin: 1rem;
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
 }
