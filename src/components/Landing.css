@@ -36,6 +36,19 @@ h1 {
   margin: 0;
 }
 
+p {
+  font-style: italic;
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(90, 89, 89);
+  margin: 0;
+}
+
+.pro-span {
+  color: aqua;
+  text-decoration: line-through;
+}
+
 .light-text {
   font-weight: 100;
 }

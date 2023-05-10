@@ -42,7 +42,55 @@ function App() {
             H 0
             V 67  
             Z"
-              ></path>
+              >
+                <animate
+                  repeatCount="indefinite"
+                  attributeName="d"
+                  dur="45s"
+                  attributeType="XML"
+                  values="
+          M0 77
+          C 573, 383
+          922, -206
+          2600, 316
+  
+          V0 600
+          H0 0
+          V0 300
+          Z;
+  
+          M0 77
+          C 573, 60
+            1322, 37
+            2600, 336
+  
+          V0 600
+          H0 0
+          V0 300
+          Z;
+  
+          M0 77
+          C 1073, 360
+            1822, -193
+            2600, 320
+  
+          V0 600
+          H0 0
+          V0 300
+          Z;
+  
+          M0 77
+          C 573, 383
+            922, -180
+            2600, 316
+  
+          V0 600
+          H0 0
+          V0 300
+          Z
+        "
+                ></animate>
+              </path>
             </svg>
             <section id="projects" className="project-section-dark">
               <Project key={index} project={project} />
@@ -63,7 +111,55 @@ function App() {
         H 0
         V 67  
         Z"
-              ></path>
+              >
+                <animate
+                  repeatCount="indefinite"
+                  attributeName="d"
+                  dur="45s"
+                  attributeType="XML"
+                  values="
+          M0 77
+          C 573, 383
+          922, -206
+          2600, 316
+  
+          V0 600
+          H0 0
+          V0 300
+          Z;
+  
+          M0 77
+          C 573, 60
+            1322, 37
+            2600, 336
+  
+          V0 600
+          H0 0
+          V0 300
+          Z;
+  
+          M0 77
+          C 1073, 360
+            1822, -193
+            2600, 320
+  
+          V0 600
+          H0 0
+          V0 300
+          Z;
+  
+          M0 77
+          C 573, 383
+            922, -180
+            2600, 316
+  
+          V0 600
+          H0 0
+          V0 300
+          Z
+        "
+                ></animate>
+              </path>
             </svg>
           </>
         )

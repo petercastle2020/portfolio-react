@@ -70,10 +70,13 @@ const Landing = () => {
           ></animate>
         </path>
       </svg>
-      <section class="hero-section">
+      <section className="hero-section">
         <h1>
-          V<span class="light-text">&</span>P
+          V<span className="light-text">&</span>P
         </h1>
+        <p>
+          a <span className="pro-span">pro</span>grammer.
+        </p>
       </section>
     </div>
   );
