@@ -34,6 +34,12 @@
   border: solid 2px aqua;
 }
 
+.skills-link-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @media screen and (max-width: 650px) {
   .project-title {
     text-align: center;

@@ -36,7 +36,7 @@ h1 {
   margin: 0;
 }
 
-p {
+.hero-section > p {
   font-style: italic;
   font-size: 1.3rem;
   font-family: "Josefin Sans", sans-serif;

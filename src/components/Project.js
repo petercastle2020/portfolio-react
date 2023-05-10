@@ -3,6 +3,7 @@ import "./Project.css";
 
 // components
 import Skills from "./Skills";
+import Links from "./Links";
 
 const Project = ({ project }) => {
   return (
@@ -16,7 +17,10 @@ const Project = ({ project }) => {
           <p>{project.aboutText}</p>
         </div>
       </div>
-      <Skills skills={project.skills} />
+      <div className="skills-link-div">
+        <Skills skills={project.skills} />
+        <Links />
+      </div>
     </div>
   );
 };
