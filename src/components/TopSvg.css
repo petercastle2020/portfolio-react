@@ -1,0 +1,14 @@
+.top-svg {
+  width: 100%;
+  /* fill: rgb(95, 84, 194); */
+  /* fill: aqua; */
+  /* fill: rgb(27, 154, 204); */
+  /* fill: #fff; */
+  fill: rgb(0, 0, 0);
+  /* height: 40vh; */
+  height: 250px;
+  position: relative;
+  vertical-align: top;
+  left: 0;
+  top: 0;
+}
