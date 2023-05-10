@@ -1,4 +1,4 @@
-h2 {
+.skill-container > h2 {
   color: aqua;
   margin-bottom: 3rem;
   font-size: 2.5rem;
@@ -16,7 +16,7 @@ h2 {
   -o-transition: transform 0.3s ease-in-out;
 }
 
-h2:hover {
+.skill-container > h2:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);

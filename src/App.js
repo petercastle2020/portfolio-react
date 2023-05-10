@@ -40,28 +40,10 @@ function App() {
       <section id="skills" className="skills-section">
         <SkillSection />
       </section>
-
-      <section id="contact" className="contact-section"></section>
-      <svg
-        xmlns="http://www.w3.org/200/svg"
-        version="1.1"
-        class="black-static-svg"
-        transform="rotate(180)"
-      >
-        <path
-          d="
-        M0 67,
-        C 373, 283 
-          1022, -140
-          1920, 306
-        V 600
-        H 0
-        V 67  
-        Z"
-        ></path>
-      </svg>
-
+      <TopSvg />
       <section id="about" className="about-section"></section>
+      <BottomSvg />
+      <section id="contact" className="contact-section"></section>
     </div>
   );
 }
