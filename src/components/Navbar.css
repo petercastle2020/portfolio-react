@@ -25,3 +25,24 @@
   /* color: rgb(95, 84, 194); */
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    left: 0;
+    justify-content: center;
+  }
+  .nav-bar > a {
+    margin: 2rem 2rem 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .nav-bar {
+    left: 0;
+    justify-content: center;
+    font-size: smaller;
+  }
+  .nav-bar > a {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+}
