@@ -10,6 +10,7 @@ import SkillSection from "./components/SkillsSection";
 import TopSvg from "./components/TopSvg";
 import BottomSvg from "./components/BottomSvg";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 console.log(projects);
 
@@ -46,7 +47,10 @@ function App() {
         <About />
       </section>
       <BottomSvg />
-      <section id="contact" className="contact-section"></section>
+      <section id="contact" className="contact-section">
+        <Contact />
+      </section>
+      <TopSvg />
     </div>
   );
 }

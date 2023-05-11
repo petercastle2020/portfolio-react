@@ -12,7 +12,7 @@ body {
 }
 
 #skills {
-  scroll-margin-top: 250px;
+  scroll-margin-top: 400px;
 }
 
 #about {
@@ -40,13 +40,16 @@ body {
 .skills-section {
   max-height: 400px;
   margin: 5rem 0 5rem 0;
+  display: flex;
 }
 
 .about-section {
   height: 500px;
   background-color: rgb(0, 0, 0);
+  display: flex;
 }
 
 .contact-section {
-  height: 500px;
+  height: 400px;
+  display: flex;
 }
