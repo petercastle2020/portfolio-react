@@ -34,6 +34,11 @@ h1 {
   font-size: 16rem;
   font-weight: 700;
   margin: 0;
+  transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
 }
 
 .hero-section > p {
@@ -51,4 +56,10 @@ h1 {
 
 .light-text {
   font-weight: 100;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 9rem;
+  }
 }

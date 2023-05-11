@@ -55,11 +55,14 @@
 }
 
 @media screen and (max-width: 650px) {
+  .project-img > img {
+    width: 95%;
+  }
   .project-title {
     text-align: center;
   }
   .project {
-    margin: 0;
+    margin: 1rem;
   }
   .project-contents {
     margin: 0;
