@@ -1,4 +1,33 @@
-.skill-container > h2 {
+div .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div .about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div .about-text p {
+  text-align: left;
+  font-size: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  line-height: 1.5rem;
+}
+
+div .about-text a {
+  color: aqua;
+  font-weight: 500;
+}
+
+div .about-text span {
+  color: rgb(90, 89, 89);
+  font-style: italic;
+}
+
+div div .about h2 {
   color: aqua;
   margin-bottom: 3rem;
   font-size: 2.5rem;
@@ -16,16 +45,10 @@
   -o-transition: transform 0.3s ease-in-out;
 }
 
-.skill-container > h2:hover {
+div .about h2:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-}
-
-.skill-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

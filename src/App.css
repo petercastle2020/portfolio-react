@@ -15,6 +15,10 @@ body {
   scroll-margin-top: 250px;
 }
 
+#about {
+  scroll-margin-top: 150px;
+}
+
 .App {
   text-align: center;
 }
