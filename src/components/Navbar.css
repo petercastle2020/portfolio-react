@@ -2,14 +2,20 @@
   display: flex;
   flex-direction: row;
   position: fixed;
+  width: 100%;
   top: 0;
   right: 0;
   z-index: 2;
-  justify-content: flex-end;
+  justify-content: space-between;
   /* background-color: aqua; */
 }
 
-.nav-bar > a {
+.nav-bar-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar-links > a {
   color: #fff;
   margin: 2rem 3rem 2rem 1rem;
   font-weight: 100;
@@ -20,11 +26,29 @@
   -o-transition: all 0.3s ease-in-out;
 }
 
-.nav-bar > a:hover {
+.nav-bar-links > a:hover {
   color: aqua;
   /* color: rgb(95, 84, 194); */
   font-size: 1.2rem;
 }
+
+/* language-change styles */
+
+.language-switch {
+  margin-top: 1rem;
+}
+
+.arrow-down-icon {
+  cursor: pointer;
+}
+
+.arrow-down-icon:hover path {
+  fill: aqua;
+}
+
+/* end language-change styles */
+
+/* responsive query */
 
 @media screen and (max-width: 500px) {
   .nav-bar {
