@@ -41,16 +41,20 @@ const Navbar = () => {
         </div>
         {showLanguageSwitch && (
           <div className="language-switch-dropdown">
-            <LanguageTagButton
-              icon={<UsaFlagIcon />}
-              selected={selectedLanguage === "usa"}
-              onClick={() => handleLanguageTagClick("usa")}
-            />
-            <LanguageTagButton
-              icon={<BrazilFlagIcon />}
-              selected={selectedLanguage === "brazil"}
-              onClick={() => handleLanguageTagClick("brazil")}
-            />
+            {selectedLanguage !== "usa" && (
+              <LanguageTagButton
+                icon={<UsaFlagIcon />}
+                selected={selectedLanguage === "usa"}
+                onClick={() => handleLanguageTagClick("usa")}
+              />
+            )}
+            {selectedLanguage !== "brazil" && (
+              <LanguageTagButton
+                icon={<BrazilFlagIcon />}
+                selected={selectedLanguage === "brazil"}
+                onClick={() => handleLanguageTagClick("brazil")}
+              />
+            )}
           </div>
         )}
       </div>
