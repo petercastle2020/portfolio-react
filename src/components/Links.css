@@ -22,3 +22,14 @@
   /* color: rgb(95, 84, 194); */
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 340px) {
+  .project-links > a {
+    padding-right: 2rem;
+    font-size: 0.8rem;
+  }
+
+  project-links > a:hover {
+    font-size: 0.9rem;
+  }
+}

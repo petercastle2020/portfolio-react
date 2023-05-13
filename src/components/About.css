@@ -52,3 +52,12 @@ div .about h2:hover {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
+
+@media screen and (max-width: 450px) {
+  div .about-text p {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 0 1rem 1rem 1rem;
+    line-height: 1.5rem;
+  }
+}

@@ -7,7 +7,7 @@ const Landing = () => {
       <svg
         xmlns="http://www.w3.org/200/svg"
         version="1.1"
-        class="wave-svg"
+        className="wave-svg"
         transform="rotate(180)"
       >
         <path

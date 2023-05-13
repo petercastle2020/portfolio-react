@@ -1,68 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { ReactComponent as BrazilFlagIcon } from "../icons/flag-brazil-svgrepo.svg";
-import { ReactComponent as UsaFlagIcon } from "../icons/flag-us-svgrepo.svg";
-import { ReactComponent as ArrowDownIcon } from "../icons/arrow-down-svgrepo.svg";
-import LanguageTagButton from "./LanguageTagButton";
+import React from "react";
 
 import "./Navbar.css";
 
-const Navbar = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("brazil");
-  const [showLanguageSwitch, setShowLanguageSwitch] = useState(false);
+// Components
+import LanguageSwitch from "./LanguageSwitch";
 
-  useEffect(() => {
-    // Implement code to switch language here
-  }, [selectedLanguage]);
+// Projetos, Competências, Contato, Sobre
 
-  const handleLanguageTagClick = (language) => {
-    setSelectedLanguage(language);
-    setShowLanguageSwitch(false);
-  };
-
-  const toggleLanguageSwitch = () => {
-    setShowLanguageSwitch(!showLanguageSwitch);
-  };
-
+const Navbar = ({ language, onLanguageChange, linkText }) => {
   return (
     <div className="nav-bar">
-      <div className="language-switch">
-        <div className="language-switch-selected">
-          <LanguageTagButton
-            icon={
-              selectedLanguage === "usa" ? <UsaFlagIcon /> : <BrazilFlagIcon />
-            }
-            selected={showLanguageSwitch}
-            onClick={toggleLanguageSwitch}
-          />
-          <ArrowDownIcon
-            className="arrow-down-icon"
-            onClick={toggleLanguageSwitch}
-          />
-        </div>
-        {showLanguageSwitch && (
-          <div className="language-switch-dropdown">
-            {selectedLanguage !== "usa" && (
-              <LanguageTagButton
-                icon={<UsaFlagIcon />}
-                selected={selectedLanguage === "usa"}
-                onClick={() => handleLanguageTagClick("usa")}
-              />
-            )}
-            {selectedLanguage !== "brazil" && (
-              <LanguageTagButton
-                icon={<BrazilFlagIcon />}
-                selected={selectedLanguage === "brazil"}
-                onClick={() => handleLanguageTagClick("brazil")}
-              />
-            )}
-          </div>
-        )}
-      </div>
+      <LanguageSwitch language={language} onLanguageChange={onLanguageChange} />
       <div className="nav-bar-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#projects">{linkText.projects}</a>
+        <a href="#skills">{linkText.skills}</a>
+        <a href="#contact">{linkText.contact}</a>
+        <a href="#about">{linkText.about}</a>
       </div>
     </div>
   );

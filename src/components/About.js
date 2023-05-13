@@ -23,7 +23,15 @@ const About = () => {
           My GitHub profile showcases some of my personal projects and
           highlights my skills in web development. You can check out my profile
           here:
-          <a href="https://github.com/petercastle2020"> GitHub</a>.
+          <a
+            href="https://github.com/petercastle2020"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            GitHub
+          </a>
+          .
         </p>
         <p>
           If you'd like to get in touch, please feel free to reach out to me via

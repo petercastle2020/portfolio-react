@@ -1,0 +1,11 @@
+.language-switch {
+  margin-top: 1rem;
+}
+
+.arrow-down-icon {
+  cursor: pointer;
+}
+
+.arrow-down-icon:hover path {
+  fill: aqua;
+}

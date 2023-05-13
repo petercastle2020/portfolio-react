@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 
 import { projects } from "./projectsArray";
@@ -15,27 +16,50 @@ import Contact from "./components/Contact";
 console.log(projects);
 
 function App() {
+  const [language, setLanguage] = useState("usa");
+
+  const handleLanguageChange = (language) => {
+    setLanguage(language);
+  };
+
+  const linkText = {
+    projects: language === "brazil" ? "Projetos" : "Projects",
+    skills: language === "brazil" ? "Competências" : "Skills",
+    contact: language === "brazil" ? "Contato" : "Contact",
+    about: language === "brazil" ? "Sobre" : "About",
+  };
+
+  console.log(linkText);
+
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+        <Navbar
+          language={language}
+          onLanguageChange={handleLanguageChange}
+          linkText={linkText}
+        />
       </header>
       <section className="landing">
         <Landing />
       </section>
       {projects.map((project, index) =>
         index === 1 ? (
-          <section id="projects" className="project-section-light">
-            <Project key={index} project={project} />
+          <section
+            key={project.title}
+            id="projects"
+            className="project-section-light"
+          >
+            <Project project={project} />
           </section>
         ) : (
-          <>
+          <div key={project.title}>
             <TopSvg />
             <section id="projects" className="project-section-dark">
-              <Project key={index} project={project} />
+              <Project project={project} />
             </section>
             <BottomSvg />
-          </>
+          </div>
         )
       )}
 

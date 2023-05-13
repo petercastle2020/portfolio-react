@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .skills-container > div {

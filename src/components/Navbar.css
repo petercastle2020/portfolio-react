@@ -35,23 +35,13 @@
   -o-transform: scale(1.3);
 }
 
-/* language-change styles */
-
-.language-switch {
-  margin-top: 1rem;
-}
-
-.arrow-down-icon {
-  cursor: pointer;
-}
-
-.arrow-down-icon:hover path {
-  fill: aqua;
-}
-
-/* end language-change styles */
-
 /* responsive query */
+
+@media screen and (max-width: 630px) {
+  .nav-bar-links > a {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .nav-bar {
@@ -59,7 +49,8 @@
     /* justify-content: center; */
   }
   .nav-bar-links > a {
-    margin: 2rem 1rem 2rem 1rem;
+    font-size: smaller;
+    margin: 2rem 0.5rem 2rem 0.5rem;
   }
 }
 
@@ -68,7 +59,7 @@
     left: 0;
     font-size: smaller;
   }
-  .nav-bar > a {
+  .nav-bar-links > a {
     margin: 2rem 0.5rem 2rem 1rem;
   }
 }
