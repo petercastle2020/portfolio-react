@@ -5,8 +5,6 @@ import "./Navbar.css";
 // Components
 import LanguageSwitch from "./LanguageSwitch";
 
-// Projetos, Competências, Contato, Sobre
-
 const Navbar = ({ language, onLanguageChange, linkText }) => {
   return (
     <div className="nav-bar">

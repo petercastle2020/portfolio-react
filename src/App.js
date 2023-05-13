@@ -13,6 +13,9 @@ import BottomSvg from "./components/BottomSvg";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
+// Translations
+import { LinkEn, LinkPt } from "./translationText";
+
 console.log(projects);
 
 function App() {
@@ -22,12 +25,14 @@ function App() {
     setLanguage(language);
   };
 
-  const linkText = {
-    projects: language === "brazil" ? "Projetos" : "Projects",
-    skills: language === "brazil" ? "Competências" : "Skills",
-    contact: language === "brazil" ? "Contato" : "Contact",
-    about: language === "brazil" ? "Sobre" : "About",
-  };
+  // const linkText = {
+  //   projects: language === "brazil" ? "Projetos" : "Projects",
+  //   skills: language === "brazil" ? "Competências" : "Skills",
+  //   contact: language === "brazil" ? "Contato" : "Contact",
+  //   about: language === "brazil" ? "Sobre" : "About",
+  // };
+
+  const linkText = language === "usa" ? LinkEn : LinkPt;
 
   console.log(linkText);
 
