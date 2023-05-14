@@ -5,10 +5,11 @@ import { ReactComponent as LinkedInIcon } from "../icons/icons8-linkedin.svg";
 import { ReactComponent as GitHubIcon } from "../icons/icons8-github.svg";
 import { ReactComponent as EmailIcon } from "../icons/email-message.svg";
 
-const Contact = () => {
+const Contact = ({ contactSectionText }) => {
+  const { title } = contactSectionText;
   return (
     <div className="contact">
-      <h2>Contact</h2>
+      <h2>{title}</h2>
       <div className="contact-table">
         <div className="email-container">
           <EmailIcon /> <p>vagnerpetel@gmail.com</p>

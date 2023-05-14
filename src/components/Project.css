@@ -1,5 +1,6 @@
 .project {
   margin: 2rem 2rem 2rem 2rem;
+  max-width: 900px;
 }
 .project-title {
   text-align: left;

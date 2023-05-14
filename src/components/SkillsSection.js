@@ -14,10 +14,11 @@ const skill = [
   "html",
 ];
 
-const SkillSection = () => {
+const SkillSection = ({ skillsSectionText }) => {
+  const { title } = skillsSectionText;
   return (
     <div className="skill-container">
-      <h2>Skills</h2>
+      <h2>{title}</h2>
       <Skills skills={skill} />
     </div>
   );

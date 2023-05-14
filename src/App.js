@@ -14,7 +14,16 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 
 // Translations
-import { LinkEn, LinkPt } from "./translationText";
+import {
+  LinkEn,
+  LinkPt,
+  aboutSectionEn,
+  aboutSectionPt,
+  contactSectionEn,
+  contactSectionPt,
+  skillsSectionEn,
+  skillsSectionPt,
+} from "./translationText";
 
 console.log(projects);
 
@@ -25,16 +34,16 @@ function App() {
     setLanguage(language);
   };
 
-  // const linkText = {
-  //   projects: language === "brazil" ? "Projetos" : "Projects",
-  //   skills: language === "brazil" ? "Competências" : "Skills",
-  //   contact: language === "brazil" ? "Contato" : "Contact",
-  //   about: language === "brazil" ? "Sobre" : "About",
-  // };
-
   const linkText = language === "usa" ? LinkEn : LinkPt;
+  const aboutSectionText = language === "usa" ? aboutSectionEn : aboutSectionPt;
+  const contactSectionText =
+    language === "usa" ? contactSectionEn : contactSectionPt;
+  const skillsSectionText =
+    language === "usa" ? skillsSectionEn : skillsSectionPt;
 
   console.log(linkText);
+  console.log(aboutSectionText);
+  console.log(skillsSectionText);
 
   return (
     <div className="App">
@@ -69,15 +78,15 @@ function App() {
       )}
 
       <section id="skills" className="skills-section">
-        <SkillSection />
+        <SkillSection skillsSectionText={skillsSectionText} />
       </section>
       <TopSvg />
       <section id="about" className="about-section">
-        <About />
+        <About aboutSectionText={aboutSectionText} />
       </section>
       <BottomSvg />
       <section id="contact" className="contact-section">
-        <Contact />
+        <Contact contactSectionText={contactSectionText} />
       </section>
       <TopSvg />
     </div>
