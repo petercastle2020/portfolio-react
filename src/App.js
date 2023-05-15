@@ -41,10 +41,6 @@ function App() {
   const skillsSectionText =
     language === "usa" ? skillsSectionEn : skillsSectionPt;
 
-  console.log(linkText);
-  console.log(aboutSectionText);
-  console.log(skillsSectionText);
-
   return (
     <div className="App">
       <header className="App-header">
@@ -64,13 +60,13 @@ function App() {
             id="projects"
             className="project-section-light"
           >
-            <Project project={project} />
+            <Project project={project} language={language} />
           </section>
         ) : (
           <div key={project.title}>
             <TopSvg />
             <section id="projects" className="project-section-dark">
-              <Project project={project} />
+              <Project project={project} language={language} />
             </section>
             <BottomSvg />
           </div>

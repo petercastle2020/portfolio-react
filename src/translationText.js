@@ -52,6 +52,12 @@ export const skillsSectionEn = {
 export const skillsSectionPt = {
   title: "Competências",
 };
-// project section
-// Source Code = Código fonte
-// Live Demo = Visite o site
+// link component
+export const linkComponentEn = {
+  liveDemo: "Live Demo",
+  sourceCode: "Source Code",
+};
+export const linkComponentPt = {
+  liveDemo: "Visite o site",
+  sourceCode: "Código fonte",
+};

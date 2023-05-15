@@ -5,21 +5,28 @@ import "./Project.css";
 import Skills from "./Skills";
 import Links from "./Links";
 
-const Project = ({ project }) => {
+const Project = ({ project, language }) => {
+  const { title, image, aboutText, gitHubLink, liveDemoLink, skills } = project;
+  const aboutTextLanguage = language === "usa" ? aboutText.en : aboutText.pt;
+
   return (
     <div className="project">
-      <h2 className="project-title">{project.title}</h2>
+      <h2 className="project-title">{title}</h2>
       <div className="project-contents">
         <div className="project-img">
-          <img src={project.image} alt="project-illustration" />
+          <img src={image} alt="project-illustration" />
         </div>
         <div className="project-about">
-          <p>{project.aboutText}</p>
+          <p>{aboutTextLanguage}</p>
         </div>
       </div>
       <div className="skills-link-div">
-        <Skills skills={project.skills} />
-        <Links />
+        <Skills skills={skills} />
+        <Links
+          language={language}
+          gitHubLink={gitHubLink}
+          liveDemoLink={liveDemoLink}
+        />
       </div>
     </div>
   );

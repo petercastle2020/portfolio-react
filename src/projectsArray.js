@@ -8,10 +8,14 @@ const xboxoneImage =
 // use this words to ref icons {react, node.js, mongodb, express.js, github, javascript, css, html}
 const projects = [
   {
-    title: "Project 1",
+    title: "You News",
     image: disneyImage,
-    aboutText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales tortor urna, eget maximus magna porttitor nec. Proin nunc purus, finibus vel magna at, semper tincidunt mauris. Aenean eu velit enim. Morbi et lorem ligula. Proin ac eros vel sem bibendum placerat. Class aptent taciti sociosqu ad litora torquent per.",
+    aboutText: {
+      en: "here would be the EN texat",
+      pt: "BR BR BR BR BR BR BR BR",
+    },
+    gitHubLink: "githublink.something",
+    liveDemoLink: "livedemo.something.",
     skills: [
       "React",
       "Node.js",
@@ -26,15 +30,23 @@ const projects = [
   {
     title: "Project 2",
     image: binanceImage,
-    aboutText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales tortor urna, eget maximus magna porttitor nec. Proin nunc purus, finibus vel magna at, semper tincidunt mauris. Aenean eu velit enim. Morbi et lorem ligula. Proin ac eros vel sem bibendum placerat. Class aptent taciti sociosqu ad litora torquent per.",
+    aboutText: {
+      en: "here would be the EN texat",
+      pt: "BR BR BR BR BR BR BR BR",
+    },
+    gitHubLink: "githublink.something",
+    liveDemoLink: "livedemo.something.",
     skills: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Project 3",
     image: xboxoneImage,
-    aboutText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales tortor urna, eget maximus magna porttitor nec. Proin nunc purus, finibus vel magna at, semper tincidunt mauris. Aenean eu velit enim. Morbi et lorem ligula. Proin ac eros vel sem bibendum placerat. Class aptent taciti sociosqu ad litora torquent per.",
+    aboutText: {
+      en: "here would be the EN texat",
+      pt: "BR BR BR BR BR BR BR BR",
+    },
+    gitHubLink: "githublink.something",
+    liveDemoLink: "livedemo.something.",
     skills: ["github", "javascript", "css", "html"],
   },
 ];
