@@ -33,3 +33,7 @@
     font-size: 0.9rem;
   }
 }
+
+.disabled-link {
+  cursor: not-allowed;
+}

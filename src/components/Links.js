@@ -8,9 +8,21 @@ const Links = ({ language, gitHubLink, liveDemoLink }) => {
   const linkText = language === "usa" ? linkComponentEn : linkComponentPt;
   return (
     <div className="project-links">
-      <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
-        {linkText.liveDemo}
-      </a>
+      {liveDemoLink ? (
+        <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
+          {linkText.liveDemo}
+        </a>
+      ) : (
+        <a
+          href={liveDemoLink}
+          disabled={!liveDemoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="disabled-link"
+        >
+          Live Demo (Not Available)
+        </a>
+      )}
       <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
         {linkText.sourceCode}
       </a>
