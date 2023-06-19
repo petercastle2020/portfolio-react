@@ -91,8 +91,9 @@ hr {
   color: aqua;
 }
 
-.email-container {
+.email-phone-container {
   display: flex;
+  padding-bottom: 2rem;
   align-items: center;
   transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
@@ -102,7 +103,7 @@ hr {
   -webkit-transition: transform 0.2s ease-in-out;
 }
 
-.email-container:hover {
+.email-phone-container:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -111,14 +112,14 @@ hr {
   border-color: aqua;
 }
 
-.email-container p {
+.email-phone-container p {
   font-size: 1rem;
   padding: 1rem;
   margin: 0;
 }
 
 @media screen and (max-width: 340px) {
-  .email-container p {
+  .email-phone-container p {
     font-size: 0.9rem;
   }
 }

@@ -4,6 +4,7 @@ import { ReactComponent as TwitterIcon } from "../icons/icons8-twitter.svg";
 import { ReactComponent as LinkedInIcon } from "../icons/icons8-linkedin.svg";
 import { ReactComponent as GitHubIcon } from "../icons/icons8-github.svg";
 import { ReactComponent as EmailIcon } from "../icons/email-message.svg";
+import { ReactComponent as WhatsAppIcon } from "../icons/icons8-whatsapp.svg";
 
 const Contact = ({ contactSectionText }) => {
   const { title } = contactSectionText;
@@ -11,9 +12,13 @@ const Contact = ({ contactSectionText }) => {
     <div className="contact">
       <h2>{title}</h2>
       <div className="contact-table">
-        <div className="email-container">
-          <EmailIcon /> <p>vagnerpetel@gmail.com</p>
+        <div className="email-phone-container">
+          <WhatsAppIcon /> <p>(42) 99973-3011</p>
         </div>
+        <div className="email-phone-container">
+          <EmailIcon /> <p>vagnerpetel2020@gmail.com</p>
+        </div>
+
         <hr className="dotted"></hr>
         <div className="social-media-container">
           <a
