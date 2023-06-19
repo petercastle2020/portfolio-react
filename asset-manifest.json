@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b0c8186.css",
-    "main.js": "/static/js/main.449bbdbc.js",
-    "static/media/flag-us-svgrepo.svg": "/static/media/flag-us-svgrepo.6abf3ecbf5136734859df95106e940fd.svg",
-    "static/media/email-message.svg": "/static/media/email-message.1012515bc928114ea01b24c4614f8e61.svg",
-    "static/media/icons8-whatsapp.svg": "/static/media/icons8-whatsapp.7dc3f3267bee9b39fd8d08466208e48a.svg",
-    "static/media/flag-brazil-svgrepo.svg": "/static/media/flag-brazil-svgrepo.3e737e5a125307ec670fd50b71f12b38.svg",
-    "static/media/arrow-down-svgrepo.svg": "/static/media/arrow-down-svgrepo.77757fc97fe37a6d7ccd08366a434f3b.svg",
-    "index.html": "/index.html",
-    "static/media/icons8-twitter.svg": "/static/media/icons8-twitter.fe06d572bd13680e66f4d31fc7cf1832.svg",
-    "static/media/icons8-github.svg": "/static/media/icons8-github.7fd2a4c24e6b3f4e7a53c7a2c6577837.svg",
-    "static/media/icons8-linkedin.svg": "/static/media/icons8-linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.9b0c8186.css.map": "/static/css/main.9b0c8186.css.map",
-    "main.449bbdbc.js.map": "/static/js/main.449bbdbc.js.map"
+    "main.css": "/portfolio-react/static/css/main.9b0c8186.css",
+    "main.js": "/portfolio-react/static/js/main.85708d33.js",
+    "static/media/flag-us-svgrepo.svg": "/portfolio-react/static/media/flag-us-svgrepo.6abf3ecbf5136734859df95106e940fd.svg",
+    "static/media/email-message.svg": "/portfolio-react/static/media/email-message.1012515bc928114ea01b24c4614f8e61.svg",
+    "static/media/icons8-whatsapp.svg": "/portfolio-react/static/media/icons8-whatsapp.7dc3f3267bee9b39fd8d08466208e48a.svg",
+    "index.html": "/portfolio-react/index.html",
+    "static/media/flag-brazil-svgrepo.svg": "/portfolio-react/static/media/flag-brazil-svgrepo.3e737e5a125307ec670fd50b71f12b38.svg",
+    "static/media/arrow-down-svgrepo.svg": "/portfolio-react/static/media/arrow-down-svgrepo.77757fc97fe37a6d7ccd08366a434f3b.svg",
+    "static/media/icons8-twitter.svg": "/portfolio-react/static/media/icons8-twitter.fe06d572bd13680e66f4d31fc7cf1832.svg",
+    "static/media/icons8-github.svg": "/portfolio-react/static/media/icons8-github.7fd2a4c24e6b3f4e7a53c7a2c6577837.svg",
+    "static/media/icons8-linkedin.svg": "/portfolio-react/static/media/icons8-linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
+    "main.9b0c8186.css.map": "/portfolio-react/static/css/main.9b0c8186.css.map",
+    "main.85708d33.js.map": "/portfolio-react/static/js/main.85708d33.js.map"
   },
   "entrypoints": [
     "static/css/main.9b0c8186.css",
-    "static/js/main.449bbdbc.js"
+    "static/js/main.85708d33.js"
   ]
 }
