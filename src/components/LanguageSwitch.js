@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./LanguageSwitch.css";
 // Icons
 import { ReactComponent as BrazilFlagIcon } from "../icons/flag-brazil-svgrepo.svg";
@@ -10,6 +10,13 @@ import LanguageTagButton from "./LanguageTagButton";
 const LanguageSwitch = ({ language, onLanguageChange }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(language);
   const [showLanguageSwitch, setShowLanguageSwitch] = useState(false);
+
+  useEffect(() => {
+    const userLanguage = navigator.language.toLowerCase();
+    if (userLanguage.toLowerCase() === "pt-br") {
+      setSelectedLanguage(userLanguage);
+    }
+  }, [setSelectedLanguage]);
 
   const handleLanguageTagClick = (language) => {
     setSelectedLanguage(language);

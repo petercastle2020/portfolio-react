@@ -25,8 +25,6 @@ import {
   skillsSectionPt,
 } from "./translationText";
 
-console.log(projects);
-
 function App() {
   const [language, setLanguage] = useState("usa");
 
