@@ -10,17 +10,20 @@ import LanguageTagButton from "./LanguageTagButton";
 const LanguageSwitch = ({ language, onLanguageChange }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(language);
   const [showLanguageSwitch, setShowLanguageSwitch] = useState(false);
+  const [userInitiatedChange, setUserInitiatedChange] = useState(false);
 
   useEffect(() => {
     const userLanguage = navigator.language.toLowerCase();
-    if (userLanguage.toLowerCase() === "pt-br") {
+    if (userLanguage.toLowerCase() === "pt-br" && !userInitiatedChange) {
       setSelectedLanguage(userLanguage);
+      onLanguageChange(userLanguage);
     }
-  }, [setSelectedLanguage]);
+  }, [onLanguageChange, userInitiatedChange]);
 
   const handleLanguageTagClick = (language) => {
     setSelectedLanguage(language);
     onLanguageChange(language);
+    setUserInitiatedChange(true);
     setShowLanguageSwitch(false);
   };
 
